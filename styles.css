@@ -33,10 +33,10 @@ body {
   }
   /* main */
   main img {
-    width: 300px;
+    width: 100px;
   }
   section {
-    width: 940px;
+    width: 1080px;
     text-align: center;
   }
   article {
@@ -62,7 +62,7 @@ body {
   }
 
   footer p {
-    width: 100px;
+    width: 200px;
     padding: 5px;
     margin-top: 150px;
     text-align: center;
