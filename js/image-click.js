@@ -1,3 +1,4 @@
 'use strict'
 
-var onmouseover="Please do not touch the merchandise."
+var a = 42;
+var b = '42';
