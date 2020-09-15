@@ -71,3 +71,8 @@ body {
     color: white;
     background-color: rgb(206, 34, 34);
     }
+
+    a {
+      text-decoration: underline;
+      color: rgb(255, 255, 255);
+    }
