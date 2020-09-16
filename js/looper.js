@@ -1,43 +1,61 @@
 'use strict'
 
-// helper function
-function getProduct() {
-  var response = prompt('Would you rather have a house or hotel?');
-  var item;
+//ask for name
 
-  while(response != 'house' && response != 'hotel') {
-    response = prompt('Would you rather have a house or hotel? BE SPECIFIC');
+var userName = prompt('What is your name?');
+var message;
+
+if (userName === 'Ricardo') {
+    message = ' What are the chances, that\'s my name!';
+} else if (userName === 'ricardo') {
+    message = ' You should capatilze a fine name like Ricardo!';
+} else {
+    message = ' That\'s not a very good name; Ricardo, now there\'s a good name!';
+ }
+
+document.write('<h3>Hello ' + userName + '!' + message + '</h3>');
+
+
+//product tally
+// helper function
+
+function getProduct() {
+  var response = prompt('Do you want a kayak or a paddle board?');
+  var itemType;
+
+  while(response != 'kayak' && response != 'paddle board') {
+    response = prompt('Would you rather have a kayak or paddle board? BE SPECIFIC');
   }
 
-  if (response === 'house') {
-    item = '<img src="../images/house.png">';
-  } else if (response === 'hotel') {
-    item = '<img src="../images/hotel.png">';
+  if (response === 'kayak') {
+    itemType = '<img src="../images/kayak.jpg">';
+  } else if (response === 'paddle board') {
+    itemType = '<img src="../images/paddle-board.jpg">';
   } 
 
-  return item;
+  return itemType;
 }
 
 // helper function
 function getCount() {
-  var count = prompt('Great! How many would you like?');
-  while(isNaN(count) || count === '') {
-    count = prompt("PLEASE enter a number. How many would you like?");
+  var tally = prompt('Great! How many would you like?');
+  while(isNaN(tally) || tally === '') {
+    tally = prompt("PLEASE enter a number. How many would you like?");
   }
-  return count;
+  return tally;
 }
 
-function showOrder() {
-  var result = '';
+function showItems() {
+  var conclusion = '';
   var itemType = getProduct();
-  var total = getCount();
+  var overall = getCount();
 
-  for(var i = 0; i < total; i++) {
-    result = result + '<p>' + itemType + '</p>';
-    console.log(result);
+  for(var i = 0; i < overall; i++) {
+    conclusion = conclusion + '<p>' + itemType + '</p>';
+    console.log(conclusion);
   }
 
-  return document.write(result);
+  return document.write(conclusion);
 }
 
-showOrder();
+showItems();
