@@ -20,3 +20,5 @@ function subractFormula(x,y){
 }
 
 document.getElementById('calcButton').addEventListener('click',doMath)
+
+doMath();
