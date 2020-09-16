@@ -21,19 +21,19 @@ document.write('<h3>Hello ' + userName + '!' + message + '</h3>');
 
 function getProduct() {
   var response = prompt('Do you want a kayak or a paddle board?');
-  var itemType;
+  var item;
 
   while(response != 'kayak' && response != 'paddle board') {
     response = prompt('Would you rather have a kayak or paddle board? BE SPECIFIC');
   }
 
   if (response === 'kayak') {
-    itemType = '<img src="../images/kayak.jpg">';
+    item = '<img src="../images/kayak.jpg">';
   } else if (response === 'paddle board') {
-    itemType = '<img src="../images/paddle-board.jpg">';
+    item = '<img src="../images/paddle-board.jpg">';
   } 
 
-  return itemType;
+  return item;
 }
 
 // helper function
