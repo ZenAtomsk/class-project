@@ -17,6 +17,7 @@ document.write('<h3>Hello ' + userName + '!' + message + '</h3>');
 
 
 //product tally
+
 // helper function
 
 function getProduct() {
@@ -44,6 +45,8 @@ function getCount() {
   }
   return tally;
 }
+
+//King of functions
 
 function showItems() {
   var conclusion = '';
