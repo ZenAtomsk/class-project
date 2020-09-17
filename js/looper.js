@@ -28,9 +28,9 @@ function getProduct() {
   }
 
   if (response === 'kayak') {
-    item = '<img src="../images/kayak.jpg">';
+    item = '<img src="images/kayak.jpg">';
   } else if (response === 'paddle board') {
-    item = '<img src="../images/paddle-board.jpg">';
+    item = '<img src="images/paddle-board.jpg">';
   } 
 
   return item;
